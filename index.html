@@ -9,6 +9,19 @@
         li {
             color: royalblue;
         }
+        .fruits-container li {
+            color: orange;
+            font-weight: bold;
+        }
+        #fruits-title {
+            color: orange;
+        }
+        .important-places{
+            color: mediumseagreen;
+            font-size: large;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -16,12 +29,31 @@
         <h1>Exploring DOM</h1>
     </header>
     <main>
-        <h1>DOM(Document Object Model)</h1>
-        <ul>
-            <li>Document</li>
-            <li>Object</li>
-            <li>Model</li>
-        </ul>
+        <section>
+            <h1>DOM(Document Object Model)</h1>
+            <ul>
+                <li>Document</li>
+                <li>Object</li>
+                <li>Model</li>
+            </ul>
+        </section>
+
+        <section class="fruits-container">
+            <h1 id="fruits-title">Favorites Fruits</h1>
+            <ul>
+                <li>Mango</li>
+                <li>Jackfruit</li>
+                <li>Banana</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places-title">Places I like to visit</h1>
+            <ul>
+                <li class="important-places">Madina</li>
+                <li class="important-places">Macca</li>
+                <li>Mashjidul Aksa</li>
+            </ul>
+        </section>
     </main>
 
     <script src="js/dom.js"></script>
@@ -40,6 +72,19 @@
             console.log(h1);
             // console.log(h1.innerText);
         }
+
+        // getElementsByClassName:
+        const places = document.getElementsByClassName('important-places');
+        for (const place of places) {
+            console.log(place.innerText);
+        }
+
+        // querySelectorAll():
+        const someLi = document.querySelectorAll('.fruits-container li');
+        for (const li of someLi) {
+            console.log(li.innerText);
+        } 
+
     </script>
 </body>
 </html>
