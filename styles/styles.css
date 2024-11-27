@@ -1,3 +1,11 @@
 h1, h2 {
     color: mediumseagreen;
 }
+
+.bg-yellow {
+    background-color: yellowgreen;
+}
+
+.text-large{
+    font-size: 2em;
+}
