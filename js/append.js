@@ -19,3 +19,16 @@ ul.appendChild(li2);
 section.appendChild(ul)
 
 mainContainer.appendChild(section);
+
+// innerHTML:
+const dressSection = document.createElement('section');
+dressSection.innerHTML = `
+    <h1>Dress List</h1>
+    <ul>
+        <li>Panjabi</li>
+        <li>Pajama</li>
+        <li>Lungi</li>
+        <li>Genzi</li>
+    </ul>
+`;
+mainContainer.appendChild(dressSection);
