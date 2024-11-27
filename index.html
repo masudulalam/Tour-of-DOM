@@ -28,7 +28,7 @@
     <header>
         <h1>Exploring DOM</h1>
     </header>
-    <main>
+    <main id="main">
         <section>
             <h1>DOM(Document Object Model)</h1>
             <ul>
@@ -48,7 +48,7 @@
         </section>
         <section id="places">
             <h1 id="places-title">Places I like to visit</h1>
-            <ul>
+            <ul id="places-list">
                 <li class="important-places">Madina</li>
                 <li class="important-places">Macca</li>
                 <li>Mashjidul Aksa</li>
@@ -57,6 +57,7 @@
     </main>
     <script src="js/dom.js"></script>
     <script src="js/styleInJs.js"></script>
+    <script src="js/append.js"></script>
     <script>
         // get all li elements:
         const liCollections = document.getElementsByTagName('li');

@@ -11,4 +11,3 @@ for (const section of sections) {
 
 const placesContainer = document.getElementById('places');
 placesContainer.classList.add('text-large');
-placesContainer.ul.classList.remove('important-places');
